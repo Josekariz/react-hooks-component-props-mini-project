@@ -15,7 +15,7 @@ function ArticleList() {
       />
     );
   });
-  return articles;
+  return <main>{articles}</main>;
 }
 
 export default ArticleList;
