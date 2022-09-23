@@ -8,17 +8,12 @@ function App() {
   return (
     (
       <div className="App">
-        You're on your own from here! Follow the deliverables; test things out
-        in the browser as you write your code; and good luck!
-      </div>
-    ),
-    (
-      <>
         <Header name={blogData.name} />
         <About image={blogData.image} about={blogData.about} />
-        <ArticleList />
-      </>
+        <ArticleList posts={blogData.posts} />
+      </div>
     )
+   
   );
 }
 

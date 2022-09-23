@@ -2,16 +2,16 @@ import React from "react";
 import Article from "../components/Article";
 import blogData from "../data/blog";
 
-function ArticleList() {
-  const posts = blogData.posts;
+function ArticleList({posts}) {
+  // const posts = blogData.posts;
 
-  const articles = posts.map((article) => {
+  const articles = posts.map((post) => {
     return (
       <Article
-        key={article.id}
-        title={article.title}
-        date={article.date}
-        preview={article.preview}
+        key={post.id}
+        title={post.title}
+        date={post.date}
+        preview={post.preview}
       />
     );
   });
